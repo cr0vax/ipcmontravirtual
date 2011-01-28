@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "afxwin.h"
 
 
 // CMontraVirutalDlg dialog
@@ -28,4 +29,20 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+//	afx_msg void OnStnClickedCenterImage();
+//	CStatic m_images;
+
+public:
+	afx_msg void OnBnClickedButton1();
+
+	CStatic m_left;
+	CStatic m_center;
+	CStatic m_right;
+
+	int m_images[4];
+
+	int m_left_id;
+	int m_center_id;
+	int m_right_id;
 };

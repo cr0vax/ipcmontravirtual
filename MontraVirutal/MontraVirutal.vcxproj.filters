@@ -22,6 +22,18 @@
     <None Include="res\MontraVirutal.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="res\cpu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\camara.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tv.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\telemovel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MontraVirutal.h">
