@@ -95,8 +95,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="res\camara.bmp" />
+    <None Include="res\cpu.bmp" />
     <None Include="res\MontraVirutal.ico" />
     <None Include="res\MontraVirutal.rc2" />
+    <None Include="res\telemovel.bmp" />
+    <None Include="res\tv.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MontraVirutal.h" />
@@ -119,4 +123,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MontraVirutal.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
