@@ -34,6 +34,18 @@
     <None Include="res\telemovel.bmp">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="res\button_left.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\button_right.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\aspirador.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MontraVirutal.h">
