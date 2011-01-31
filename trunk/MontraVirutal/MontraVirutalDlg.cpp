@@ -44,7 +44,8 @@ BEGIN_MESSAGE_MAP(CMontraVirutalDlg, CDialogEx)
 //	ON_STN_CLICKED(IDC_CENTER_IMAGE, &CMontraVirutalDlg::OnClickedCenterImage)
 //	ON_STN_DBLCLK(IDC_CENTER_IMAGE, &CMontraVirutalDlg::OnStnDblclickCenterImage)
 //	ON_STN_CLICKED(IDC_CENTER_IMAGE, &CMontraVirutalDlg::OnStnClickedCenterImage)
-	ON_BN_CLICKED(IDC_BUTTON1, &CMontraVirutalDlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_BUTTON_LEFT, &CMontraVirutalDlg::OnBnClickedButtonLeft)
+	ON_BN_CLICKED(IDC_BUTTON_RIGHT, &CMontraVirutalDlg::OnBnClickedButtonRight)
 END_MESSAGE_MAP()
 
 
@@ -53,6 +54,9 @@ END_MESSAGE_MAP()
 BOOL CMontraVirutalDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
+	CBitmap Bmpl;
+	CBitmap Bmpc;
+	CBitmap Bmpr;
 
 	// Set the icon for this dialog.  The framework does this automatically
 	//  when the application's main window is not a dialog
@@ -68,6 +72,20 @@ BOOL CMontraVirutalDlg::OnInitDialog()
 	m_images[1] = IDB_TELEMOVEL;
 	m_images[2] = IDB_CAMARA;
 	m_images[3] = IDB_CPU;
+	m_images[4] = IDB_ASPIRADOR;
+
+	// iniciar fotos
+	Bmpl.LoadBitmap(m_images[0]);
+	// update image
+	m_left.SetBitmap(Bmpl);
+
+	Bmpc.LoadBitmap(m_images[1]);
+	// update image
+	m_center.SetBitmap(Bmpc);
+
+	Bmpr.LoadBitmap(m_images[2]);
+	// update image
+	m_right.SetBitmap(Bmpr);
 	
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -110,12 +128,91 @@ HCURSOR CMontraVirutalDlg::OnQueryDragIcon()
 }
 
 
-void CMontraVirutalDlg::OnBnClickedButton1()
+void CMontraVirutalDlg::OnBnClickedButtonLeft()
 {
-	// TODO: Add your control notification handler code here
 	CBitmap Bmpl;
 	CBitmap Bmpc;
 	CBitmap Bmpr;
+	int i_max = sizeof(m_images) / sizeof(int) - 1;
+
+		// update image id for next image
+	if (m_left_id == i_max) {
+		// if it reaches maximum returns to 0
+		m_left_id = 0;
+    }
+	else {
+		m_left_id = m_left_id + 1;
+	}
+
+	// update image id for next image
+	if (m_center_id == i_max) {
+		// if it reaches maximum returns to 0
+		m_center_id = 0;
+    }
+	else {
+		m_center_id = m_center_id + 1;
+	}
+
+	// update image id for next image
+	if (m_right_id == i_max) {
+		// if it reaches maximum returns to 0
+		m_right_id = 0;
+    }
+	else {
+		m_right_id = m_right_id + 1;
+	}
+	UpdateData(TRUE);
+	UpdateData(FALSE);
+
+	Bmpl.LoadBitmap(m_images[m_left_id]);
+	// update image
+	m_left.SetBitmap(Bmpl);
+
+	Bmpc.LoadBitmap(m_images[m_center_id]);
+	// update image
+	m_center.SetBitmap(Bmpc);
+
+	Bmpr.LoadBitmap(m_images[m_right_id]);
+	// update image
+	m_right.SetBitmap(Bmpr);
+}
+
+
+void CMontraVirutalDlg::OnBnClickedButtonRight()
+{
+	CBitmap Bmpl;
+	CBitmap Bmpc;
+	CBitmap Bmpr;
+	int i_max = sizeof(m_images) / sizeof(int) - 1;
+
+	// update image id for next image
+	if (m_left_id == 0) {
+		// if it reaches maximum returns to 0
+		m_left_id = i_max;
+    }
+	else {
+		m_left_id = m_left_id - 1;
+	}
+
+	// update image id for next image
+	if (m_center_id == 0) {
+		// if it reaches maximum returns to 0
+		m_center_id = i_max;
+    }
+	else {
+		m_center_id = m_center_id - 1;
+	}
+
+	// update image id for next image
+	if (m_right_id == 0) {
+		// if it reaches maximum returns to 0
+		m_right_id = i_max;
+    }
+	else {
+		m_right_id = m_right_id - 1;
+	}
+	UpdateData(TRUE);
+	UpdateData(FALSE);
 
 	Bmpl.LoadBitmap(m_images[m_left_id]);
 	// update image
@@ -129,32 +226,4 @@ void CMontraVirutalDlg::OnBnClickedButton1()
 	// update image
 	m_right.SetBitmap(Bmpr);
 
-	// update image id for next image
-	if (m_left_id == 3) {
-		// if it reaches maximum returns to 0
-		m_left_id = 0;
-    }
-	else {
-		m_left_id = m_left_id + 1;
-	}
-
-	// update image id for next image
-	if (m_center_id == 3) {
-		// if it reaches maximum returns to 0
-		m_center_id = 0;
-    }
-	else {
-		m_center_id = m_center_id + 1;
-	}
-
-	// update image id for next image
-	if (m_right_id == 3) {
-		// if it reaches maximum returns to 0
-		m_right_id = 0;
-    }
-	else {
-		m_right_id = m_right_id + 1;
-	}
-	UpdateData(TRUE);
-	UpdateData(FALSE);
 }

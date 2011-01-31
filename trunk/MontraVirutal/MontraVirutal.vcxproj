@@ -95,6 +95,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="res\aspirador.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\button_left.bmp" />
+    <None Include="res\button_right.bmp" />
     <None Include="res\camara.bmp" />
     <None Include="res\cpu.bmp" />
     <None Include="res\MontraVirutal.ico" />
