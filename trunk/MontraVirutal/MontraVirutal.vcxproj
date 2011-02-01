@@ -94,6 +94,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="arrowcop.cur" />
     <None Include="ReadMe.txt" />
     <None Include="res\aspirador.bmp" />
     <None Include="res\bitmap2.bmp" />

@@ -35,15 +35,24 @@ public:
 
 public:
 
+	afx_msg void OnBnClickedButtonLeft();
+	afx_msg void OnBnClickedButtonRight();
+	
 	CStatic m_left;
 	CStatic m_center;
 	CStatic m_right;
 
+	CStatic m_description_1;
+	CStatic m_description_2;
+	CStatic m_description_3;
+
 	int m_images[5];
+
+	CString m_descrptions_1[5];
+	CString m_descrptions_2[5];
+	CString m_descrptions_3[5];
 
 	int m_left_id;
 	int m_center_id;
 	int m_right_id;
-	afx_msg void OnBnClickedButtonLeft();
-	afx_msg void OnBnClickedButtonRight();
 };
