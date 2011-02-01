@@ -33,6 +33,9 @@ void CMontraVirutalDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_LEFT_IMAGE, m_left);
 	DDX_Control(pDX, IDC_CENTER_IMAGE, m_center);
 	DDX_Control(pDX, IDC_RIGHTIMAGE, m_right);
+	DDX_Control(pDX, IDC_DESCRPTION_1, m_description_1);
+	DDX_Control(pDX, IDC_DESCRPTION_2, m_description_2);
+	DDX_Control(pDX, IDC_DESCRPTION_3, m_description_3);
 }
 
 BEGIN_MESSAGE_MAP(CMontraVirutalDlg, CDialogEx)
@@ -74,18 +77,51 @@ BOOL CMontraVirutalDlg::OnInitDialog()
 	m_images[3] = IDB_CPU;
 	m_images[4] = IDB_ASPIRADOR;
 
+	// array de descrições
+	m_descrptions_1[0] = "TV";
+	m_descrptions_1[1] = "TELEMOVEL";
+	m_descrptions_1[2] = "CAMARA";
+	m_descrptions_1[3] = "CPU";
+	m_descrptions_1[4] = "ASPIRADOR";
+
+	m_descrptions_2[0] = "SAMSUNG 32";
+	m_descrptions_2[1] = "NOKIA ANDROID";
+	m_descrptions_2[2] = "SONY ZOOM OPTICO 45X";
+	m_descrptions_2[3] = "INTEL PENTIUM 5.5 GB";
+	m_descrptions_2[4] = "LG 2500W";
+
+	m_descrptions_3[0] = "390€";
+	m_descrptions_3[1] = "150€";
+	m_descrptions_3[2] = "350€";
+	m_descrptions_3[3] = "250€";
+	m_descrptions_3[4] = "55€";
+
 	// iniciar fotos
 	Bmpl.LoadBitmap(m_images[0]);
-	// update image
 	m_left.SetBitmap(Bmpl);
 
 	Bmpc.LoadBitmap(m_images[1]);
-	// update image
 	m_center.SetBitmap(Bmpc);
 
 	Bmpr.LoadBitmap(m_images[2]);
-	// update image
 	m_right.SetBitmap(Bmpr);
+
+	// iniciar descrições
+	m_description_1.SetWindowText(m_descrptions_1[1]);
+	m_description_2.SetWindowText(m_descrptions_2[1]);
+	m_description_3.SetWindowText(m_descrptions_3[1]);
+
+	// definir tipos de letra
+	CFont *m_Font1 = new CFont;
+	m_Font1->CreatePointFont(250, "Arial Bold");
+
+	CFont *m_Font2 = new CFont;
+	m_Font2->CreatePointFont(500, "Arial Bold");
+
+	m_description_1.SetFont(m_Font1);
+	m_description_2.SetFont(m_Font1);
+	m_description_3.SetFont(m_Font2);
+
 	
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -164,17 +200,20 @@ void CMontraVirutalDlg::OnBnClickedButtonLeft()
 	UpdateData(TRUE);
 	UpdateData(FALSE);
 
+	// atualizar imagens
 	Bmpl.LoadBitmap(m_images[m_left_id]);
-	// update image
 	m_left.SetBitmap(Bmpl);
 
 	Bmpc.LoadBitmap(m_images[m_center_id]);
-	// update image
 	m_center.SetBitmap(Bmpc);
 
 	Bmpr.LoadBitmap(m_images[m_right_id]);
-	// update image
 	m_right.SetBitmap(Bmpr);
+
+	// atualizar descrições
+	m_description_1.SetWindowText(m_descrptions_1[m_center_id]);
+	m_description_2.SetWindowText(m_descrptions_2[m_center_id]);
+	m_description_3.SetWindowText(m_descrptions_3[m_center_id]);
 }
 
 
@@ -214,16 +253,19 @@ void CMontraVirutalDlg::OnBnClickedButtonRight()
 	UpdateData(TRUE);
 	UpdateData(FALSE);
 
+	// atualizar imagens
 	Bmpl.LoadBitmap(m_images[m_left_id]);
-	// update image
 	m_left.SetBitmap(Bmpl);
 
 	Bmpc.LoadBitmap(m_images[m_center_id]);
-	// update image
 	m_center.SetBitmap(Bmpc);
 
 	Bmpr.LoadBitmap(m_images[m_right_id]);
-	// update image
 	m_right.SetBitmap(Bmpr);
+
+	// atualizar descrições
+	m_description_1.SetWindowText(m_descrptions_1[m_center_id]);
+	m_description_2.SetWindowText(m_descrptions_2[m_center_id]);
+	m_description_3.SetWindowText(m_descrptions_3[m_center_id]);
 
 }

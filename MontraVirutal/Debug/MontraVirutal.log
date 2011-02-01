@@ -1,5 +1,5 @@
-﻿Build started 30-01-2011 23:32:42.
-     1>Project "D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\MontraVirutal\MontraVirutal.vcxproj" on node 2 (build target(s)).
+﻿Build started 01-02-2011 00:17:34.
+     1>Project "D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\MontraVirutal\MontraVirutal.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MontraVirutal.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
@@ -11,11 +11,11 @@
          MontraVirutalDlg.cpp
          Generating Code...
        ResourceCompile:
-         All outputs are up-to-date.
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\MontraVirutal.res" MontraVirutal.rc 
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\Debug\MontraVirutal.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\MontraVirutal.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\Debug\MontraVirutal.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\Debug\MontraVirutal.lib" /MACHINE:X86 Debug\MontraVirutal.res
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\Debug\MontraVirutal.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\MontraVirutal.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\Debug\MontraVirutal.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\Debug\MontraVirutal.lib" /MACHINE:X86 Debug\MontraVirutal.res
          Debug\MontraVirutal.exe.embed.manifest.res
          Debug\MontraVirutal.obj
          Debug\MontraVirutalDlg.obj
@@ -25,12 +25,12 @@
          All outputs are up-to-date.
        LinkEmbedManifest:
          All outputs are up-to-date.
-         MontraVirutal.vcxproj -> D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\Debug\MontraVirutal.exe
+         MontraVirutal.vcxproj -> D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\Debug\MontraVirutal.exe
        FinalizeBuildStatus:
          Deleting file "Debug\MontraVirutal.unsuccessfulbuild".
          Touching "Debug\MontraVirutal.lastbuildstate".
-     1>Done Building Project "D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirutal\MontraVirutal\MontraVirutal.vcxproj" (build target(s)).
+     1>Done Building Project "D:\Utilizadores\Bruno\Dcoumentos\Escola\Ano 2\1 Semestre\IPC\Trabalho Grupo 2\ipcmontravirtual\MontraVirutal\MontraVirutal.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.70
+Time Elapsed 00:00:02.91
