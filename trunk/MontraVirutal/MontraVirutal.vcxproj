@@ -97,19 +97,25 @@
     <None Include="arrowcop.cur" />
     <None Include="ReadMe.txt" />
     <None Include="res\aspirador.bmp" />
-    <None Include="res\bitmap2.bmp" />
+    <None Include="res\aspirador_blur.bmp" />
     <None Include="res\button_left.bmp" />
     <None Include="res\button_right.bmp" />
+    <None Include="res\button_see_more.bmp" />
     <None Include="res\camara.bmp" />
+    <None Include="res\camara_blur.bmp" />
     <None Include="res\cpu.bmp" />
+    <None Include="res\cpu_blur.bmp" />
     <None Include="res\MontraVirutal.ico" />
     <None Include="res\MontraVirutal.rc2" />
     <None Include="res\telemovel.bmp" />
+    <None Include="res\telemovel_blur.bmp" />
     <None Include="res\tv.bmp" />
+    <None Include="res\tv_blur.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MontraVirutal.h" />
     <ClInclude Include="MontraVirutalDlg.h" />
+    <ClInclude Include="PictureEx.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -117,6 +123,7 @@
   <ItemGroup>
     <ClCompile Include="MontraVirutal.cpp" />
     <ClCompile Include="MontraVirutalDlg.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
