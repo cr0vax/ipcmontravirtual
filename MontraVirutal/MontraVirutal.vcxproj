@@ -98,21 +98,31 @@
     <None Include="ReadMe.txt" />
     <None Include="res\aspirador.bmp" />
     <None Include="res\aspirador_blur.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\bitmap4.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\button_down.bmp" />
     <None Include="res\button_left.bmp" />
     <None Include="res\button_right.bmp" />
     <None Include="res\button_see_more.bmp" />
+    <None Include="res\button_up.bmp" />
     <None Include="res\camara.bmp" />
     <None Include="res\camara_blur.bmp" />
     <None Include="res\cpu.bmp" />
     <None Include="res\cpu_blur.bmp" />
+    <None Include="res\images_n.bmp" />
     <None Include="res\MontraVirutal.ico" />
     <None Include="res\MontraVirutal.rc2" />
     <None Include="res\telemovel.bmp" />
     <None Include="res\telemovel_blur.bmp" />
     <None Include="res\tv.bmp" />
+    <None Include="res\tv2.bmp" />
+    <None Include="res\tv3.bmp" />
+    <None Include="res\tv4.bmp" />
     <None Include="res\tv_blur.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MontraVirtualDlg2.h" />
     <ClInclude Include="MontraVirutal.h" />
     <ClInclude Include="MontraVirutalDlg.h" />
     <ClInclude Include="PictureEx.h" />
@@ -121,6 +131,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MontraVirtualDlg2.cpp" />
     <ClCompile Include="MontraVirutal.cpp" />
     <ClCompile Include="MontraVirutalDlg.cpp" />
     <ClCompile Include="PictureEx.cpp" />

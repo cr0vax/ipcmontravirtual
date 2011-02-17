@@ -64,6 +64,33 @@
     <None Include="res\button_see_more.bmp">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\button_up.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\button_down.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\images_n.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tv2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tv3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tv4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MontraVirutal.h">
@@ -84,6 +111,9 @@
     <ClInclude Include="PictureEx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MontraVirtualDlg2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MontraVirutal.cpp">
@@ -96,6 +126,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PictureEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MontraVirtualDlg2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
