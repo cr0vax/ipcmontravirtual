@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "MontraVirutal.h"
 #include "MontraVirutalDlg.h"
+#include "MontraVirtualDlg2.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -55,6 +56,7 @@ BEGIN_MESSAGE_MAP(CMontraVirutalDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_RIGHT, &CMontraVirutalDlg::OnBnClickedButtonRight)
 //	ON_WM_TIMER()
 ON_WM_TIMER()
+ON_BN_CLICKED(IDC_DETAILS, &CMontraVirutalDlg::OnBnClickedDetails)
 END_MESSAGE_MAP()
 
 
@@ -363,4 +365,14 @@ void CMontraVirutalDlg::rotateRight()
 	m_description_2.SetWindowText(m_descrptions_2[m_center_id]);
 	m_description_3.SetWindowText(m_descrptions_3[m_center_id]);
 
-	}
+}
+
+void CMontraVirutalDlg::OnBnClickedDetails()
+{
+	OnOK(); //Fecha a actual
+
+	MontraVirtualDlg2 dlg;
+
+	dlg.DoModal(); //Chama a nova
+}
+

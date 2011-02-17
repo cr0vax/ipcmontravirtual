@@ -67,4 +67,5 @@ public:
 	CPictureEx m_left_hand;
 	CPictureEx m_right_hand;	
 	CPictureEx m_left_hand2;
+	afx_msg void OnBnClickedDetails();
 };
