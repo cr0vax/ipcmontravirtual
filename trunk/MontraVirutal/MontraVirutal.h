@@ -19,11 +19,10 @@ class CMontraVirutalApp : public CWinApp
 {
 public:
 	CMontraVirutalApp();
-
 // Overrides
 public:
 	virtual BOOL InitInstance();
-
+	
 // Implementation
 
 	DECLARE_MESSAGE_MAP()

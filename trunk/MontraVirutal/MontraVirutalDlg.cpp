@@ -54,6 +54,7 @@ BEGIN_MESSAGE_MAP(CMontraVirutalDlg, CDialogEx)
 //	ON_STN_CLICKED(IDC_CENTER_IMAGE, &CMontraVirutalDlg::OnStnClickedCenterImage)
 	ON_BN_CLICKED(IDC_BUTTON_LEFT, &CMontraVirutalDlg::OnBnClickedButtonLeft)
 	ON_BN_CLICKED(IDC_BUTTON_RIGHT, &CMontraVirutalDlg::OnBnClickedButtonRight)
+	ON_WM_ERASEBKGND()
 //	ON_WM_TIMER()
 ON_WM_TIMER()
 ON_BN_CLICKED(IDC_DETAILS, &CMontraVirutalDlg::OnBnClickedDetails)
@@ -369,10 +370,23 @@ void CMontraVirutalDlg::rotateRight()
 
 void CMontraVirutalDlg::OnBnClickedDetails()
 {
-	OnOK(); //Fecha a actual
-
 	MontraVirtualDlg2 dlg;
 
+	dlg.SetProduto(m_descrptions_1[m_center_id]);
+
+	OnOK(); //Fecha a actual
+
 	dlg.DoModal(); //Chama a nova
+}
+
+BOOL CMontraVirutalDlg::OnEraseBkgnd(CDC* pDC)
+{
+	CRect rect;
+	GetClientRect(&rect);
+	CBrush myBrush(RGB(67, 192, 230));
+	CBrush *pOld = pDC ->SelectObject(&myBrush);
+	BOOL bRes = pDC->PatBlt(0, 0, rect.Width(), rect.Height(), PATCOPY);
+	pDC->SelectObject(pOld);
+	return bRes;
 }
 
