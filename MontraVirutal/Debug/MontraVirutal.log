@@ -1,11 +1,11 @@
-﻿Build started 17-02-2011 0:29:59.
+﻿Build started 17-02-2011 14:39:49.
      1>Project "E:\My Docs\Visual Studio 2010\Projects\Trabalho_IPC\MontraVirutal.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\MontraVirutal.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\MontraVirutal.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MontraVirutal.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MontraVirtualDlg2.cpp
-         MontraVirtualDlg2.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MontraVirutal.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MontraVirutalDlg.cpp
+         MontraVirutalDlg.cpp
        ResourceCompile:
          All outputs are up-to-date.
        ManifestResourceCompile:
@@ -31,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.18
+Time Elapsed 00:00:01.20
